@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace Services.Coroutines
+namespace SharedServices.Coroutines.V1
 {
     public class CoroutineEditorHelper : CoroutineHelper
     {

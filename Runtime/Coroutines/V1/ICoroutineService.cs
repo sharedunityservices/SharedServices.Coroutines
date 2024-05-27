@@ -1,8 +1,7 @@
 ﻿using System.Collections;
-using SharedServices;
 using SharedServices.V1;
 
-namespace Services.Coroutines
+namespace SharedServices.Coroutines.V1
 {
     public interface ICoroutineService : IService
     {

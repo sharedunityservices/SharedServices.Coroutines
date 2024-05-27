@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace Services.Coroutines
+namespace SharedServices.Coroutines.V1
 {
     public abstract class CoroutineHelper
     {

@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace Services.Coroutines
+namespace SharedServices.Coroutines.V1
 {
     public class CoroutineService : ICoroutineService, IDisposable
     {

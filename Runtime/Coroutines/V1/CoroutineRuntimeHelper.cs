@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using Object = UnityEngine.Object;
 
-namespace Services.Coroutines
+namespace SharedServices.Coroutines.V1
 {
     public class CoroutineRuntimeHelper : CoroutineHelper
     {
