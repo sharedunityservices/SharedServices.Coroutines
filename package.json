@@ -1,0 +1,15 @@
+{
+  "name": "com.sharedunityservices.coroutines",
+  "displayName": "SharedServices.Coroutines",
+  "version": "1.0.0",
+  "description": "<b>Dependencies:</b> https://github.com/sharedunityservices/SharedServices..Core.git\n\n<b>Overview:</b>\nThis package provides a simple way to use coroutines in Unity. It is built on top of the SharedServices.Core package and uses the SharedServices.Locator package to locate the services.\n\n<b>Features:</b>\n- CoroutineService: A service that allows you to start and stop coroutines.\n- CoroutineRunner: A MonoBehaviour that runs the coroutines.\n\n<b>How to use:</b>\n- Add the SharedServices.Core and SharedServices.Locator packages to your project.\n- Add the SharedServices.Coroutines package to your project.\n- Use the CoroutineService to start and stop coroutines.",
+  "unity": "2020.1",
+  "author": {
+    "name": "ETdoFresh",
+    "email": "etdofresh@gmail.com",
+    "url": "https://github.com/sharedunityservices"
+  },
+  "dependencies": {
+    "com.sharedunityservices.core": "1.0.0"
+  }
+}
