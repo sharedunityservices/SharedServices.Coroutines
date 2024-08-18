@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Scripting;
 
 namespace SharedServices.Coroutines.V1
 {
-    [Preserve]
+    [UnityEngine.Scripting.Preserve]
     public class CoroutineService : ICoroutineService, IDisposable
     {
         private static CoroutineHelper _coroutineHelper = new CoroutineEditorHelper();
