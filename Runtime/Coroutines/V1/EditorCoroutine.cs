@@ -6,6 +6,7 @@ namespace SharedServices.Coroutines.V1
 {
     public class EditorCoroutine
     {
+        public bool KeepWaiting { get; private set; }
         private readonly Stack<IEnumerator> _stack = new();
 
         public static EditorCoroutine StartCoroutine(IEnumerator routine)
@@ -26,6 +27,7 @@ namespace SharedServices.Coroutines.V1
         {
 #if UNITY_EDITOR
             UnityEditor.EditorApplication.update += Update;
+            KeepWaiting = true;
 #endif
         }
 
@@ -33,6 +35,7 @@ namespace SharedServices.Coroutines.V1
         {
 #if UNITY_EDITOR
             UnityEditor.EditorApplication.update -= Update;
+            KeepWaiting = false;
 #endif
         }
 

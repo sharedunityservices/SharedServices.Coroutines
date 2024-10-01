@@ -10,7 +10,7 @@ namespace SharedServices.Coroutines.V1
 
         public override RoutineObject StartCoroutine(IEnumerator routine)
         {
-            return new RoutineObject(_coroutineMonoBehaviour.StartCoroutine(routine));
+            return new RoutineObject(_coroutineMonoBehaviour, routine);
         }
         
         public override void StopCoroutine(RoutineObject routine)

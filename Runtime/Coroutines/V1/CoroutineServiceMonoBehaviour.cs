@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections;
+using UnityEngine;
 
 namespace SharedServices.Coroutines.V1
 {
@@ -7,6 +9,17 @@ namespace SharedServices.Coroutines.V1
         private void Awake()
         {
             DontDestroyOnLoad(gameObject);
+        }
+        
+        internal Coroutine StartCoroutineWithCallback(IEnumerator routine, Action callback)
+        {
+            return StartCoroutine(RoutineWithCallback(routine, callback));
+        }
+        
+        private IEnumerator RoutineWithCallback(IEnumerator routine, Action callback)
+        {
+            yield return routine;
+            callback.Invoke();
         }
     }
 }
